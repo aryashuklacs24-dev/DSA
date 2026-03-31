@@ -1,0 +1,20 @@
+import java.util.*;
+public class reverse_words_in_string {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "    the sky    is blue   ";
+//		System.out.println(s);
+		s = s.trim();
+		System.out.println(s);
+		String[] arr = s.split(" +");
+		// System.out.println(Arrays.toString(arr));
+		String ans = "";
+		for (int i = arr.length - 1; i >= 0; i--) {
+			ans += arr[i] + " ";
+		}
+		System.out.println(ans);
+	}
+
+
+}
